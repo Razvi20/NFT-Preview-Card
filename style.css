@@ -1,0 +1,130 @@
+/* 
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%) */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+}
+
+.card {
+  margin: 8rem auto;
+  background-color: hsl(216, 50%, 16%);
+  max-width: 35rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card-img {
+  max-width: 100%;
+  padding: 1.8rem;
+  border-radius: 28px;
+}
+
+.card-info {
+  padding: 0 1.8rem 1.8rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.card-header {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #888;
+  line-height: 1.5;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 2rem;
+}
+
+.card-eth {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-eth img {
+  width: 1rem;
+  height: 2rem;
+}
+
+.card-eth span {
+  font-size: 1.6rem;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.card-time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.card-time span {
+  font-size: 1.6rem;
+  color: #888;
+  font-weight: 400;
+}
+
+.card-footer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.2rem 1.2rem 2.4rem 1.2rem;
+}
+
+.card-footer img {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+}
+
+.footer-text {
+  font-size: 1.6rem;
+  color: #888;
+}
+
+.footer-name {
+  color: #fff;
+}
+
+@media (max-width: 25em) {
+  html {
+    font-size: 60%;
+  }
+
+  .card {
+    margin: 2.4rem;
+  }
+}
